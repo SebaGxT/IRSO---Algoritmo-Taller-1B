@@ -22,31 +22,50 @@ int main(void){
 
 //Variables
 
- int i,i2,producto,clientes;
+ int i,i2,producto,clientes=80;
  float costo,promediototal,gastototal=0,suma=0;
 
 //Ingreso de datos
 
 	printf("Se calculara el gasto por cliente y promedio total.\n\n");
-	printf("\n\nIngrese la cantidad de clientes: ");
-	scanf("%d",&clientes);
-	fflush(stdin);
 
 //Proceso
 
 	for(i=1;i<=clientes;i++){
 		
 		//cantidad de productos que compra cada cliente
-		printf("\n\nIngrese cantidad de productos del cliente %d: ",i);
-		scanf("%d",&producto);
-		fflush(stdin);
+		do{
+			
+			printf("\n\nIngrese cantidad de productos del cliente %d: ",i);
+			scanf("%d",&producto);
+			fflush(stdin);
+			
+			if(producto<=0){
+				
+				printf("\n\nValor ingresado incorrecto. Ingrese un valor positivo.\n\n");
+				
+			}
+			
+		}while(producto<=0);
+		
 		
 		//valor de cada producto del cliente actual
 		for(i2=1;i2<=producto;i2++){
 			
-			printf("\n\nIngrese el valor del producto %d: ",i2);
-			scanf("%f",&costo);
-			fflush(stdin);
+			do{
+				
+				printf("\n\nIngrese el valor del producto %d: ",i2);
+				scanf("%f",&costo);
+				fflush(stdin);
+			
+				if(costo<=0){
+					
+					printf("\n\nValor ingresado incorrecto. Ingrese un valor positivo.\n\n");
+					
+				}
+				
+			}while(costo<=0);
+			
 			
 			//suma total de la compra del cliente actual
 			suma+=costo;
