@@ -8,8 +8,8 @@ int main(void){
 
 //Variables
 
-	int num,may=0,i;
-	const int N=5;
+	int num,may,i;
+	const int N=40;
 
 //Ingreso de datos
 
