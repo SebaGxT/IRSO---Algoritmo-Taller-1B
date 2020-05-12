@@ -30,18 +30,32 @@ int main(void){
 			
 		}
 		
-		if(num1%2==0){
+		if(num1!=0){
+		
+			if(num1%2==0){
 			
-			sum+=num1;
+				sum+=num1;
 			
+			}
+		
 		}
+		
 		
 	}while(valid);
 
 
 //Salida de datos
 
-	printf("\n\nLa suma de los valores par es: %d",sum);
+	if(sum==0){
+		
+		printf("\n\nNo se ingresaron valores");
+		
+	}else{
+		
+		printf("\n\nLa suma de los valores par es: %d",sum);
+		
+	}
+
 
 //Pausa y fin de programa
 	
