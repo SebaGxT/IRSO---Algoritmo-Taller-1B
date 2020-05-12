@@ -9,7 +9,7 @@ int main(void){
 
 //Variables
 
-	int i,k,alumnos=25,nota,sum,examen=5,aprobados=0,desaprobados=0;
+	int i,k,alumnos=25,nota,sum=0,examen=5,aprobados=0,desaprobados=0;
 	float prom;
 
 //Ingreso de datos
@@ -24,9 +24,20 @@ int main(void){
 		
 		for(k=1;k<=examen;k++){
 			
-			printf("\nNota del examen %d: ",k);
-			scanf("%d",&nota);
-			fflush(stdin);
+			do{
+				
+				printf("\nNota del examen %d: ",k);
+				scanf("%d",&nota);
+				fflush(stdin);
+				
+				if(nota<0){
+					
+					printf("\n\nLa nota ingresada es inv%clida. Vuelva a ingresar porfavor...\n\n",160);
+					
+				}
+			
+			}while(nota<0);
+			
 			
 			sum+=nota;
 			
@@ -45,6 +56,8 @@ int main(void){
 			desaprobados++;
 			
 		}
+		
+		sum=0;
 		
 	}
 
