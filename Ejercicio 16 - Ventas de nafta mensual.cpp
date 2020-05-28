@@ -62,7 +62,7 @@ int main(void){
 		
 		do{
 			
-			//Ventas super
+			//Ventas súper
 			printf("\n\nVenta de nafta s%cper del d%ca %d: ",163,161,i+1);
 			scanf("%f",&vsuper);
 			fflush(stdin);
@@ -80,7 +80,7 @@ int main(void){
 		
 		do{
 			
-			//Ventas diesel
+			//Ventas diésel
 			printf("\n\nVenta de nafta di%csel del d%ca %d: ",130,161,i+1);
 			scanf("%f",&vdiesel);
 			fflush(stdin);
