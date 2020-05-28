@@ -43,7 +43,7 @@ int main(void){
 			scanf("%f",&temp);
 			fflush(stdin);
 			
-			//Asignacion en vector
+			//Asignación en vector
 			if(i==0){
 				
 				anio12[k]=temp;
