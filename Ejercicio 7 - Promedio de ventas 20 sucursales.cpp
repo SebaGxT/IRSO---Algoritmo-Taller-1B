@@ -38,9 +38,7 @@ int main(void){
 			}
 			
 		}while(ventas<0);
-		
-		
-		
+			
 	}
 	
 //Proceso
@@ -49,8 +47,7 @@ int main(void){
 		
 		//Suma
 		sum+=suc[i];
-		
-		
+				
 	}
 	
 	//Calculo de promedio
@@ -67,13 +64,8 @@ int main(void){
 			printf("\nLa sucursal %d supera el promedio con el total de ventas: %.2f",i,suc[i]);
 			
 		}
-		
-		
+			
 	}
-	
-//Salida de datos
-
-	
 	
 //Pausa y fin de programa
 	
