@@ -22,7 +22,7 @@ int main(void){
 	
 //Variables
 	
-	const int FIL=2,COL=4;
+	const int FIL=5,COL=4;
 	int f,c,mat[FIL][COL],votos[COL],totalvotos,pos[COL];
 	float porcentaje[COL],mayor,mayor2,aux;
 	
@@ -102,8 +102,12 @@ int main(void){
 		
 		if(porcentaje[c]>mayor){
 			
+			aux=mayor;
+			pos[1]=pos[0];
 			mayor=porcentaje[c];
 			pos[0]=c;
+			mayor2=aux;
+			
 			
 		}else if(porcentaje[c]>mayor2){
 			
