@@ -11,6 +11,7 @@ int main(){
 	const int CARRERA=12;
 	int i,vuelta[CARRERA],total,mejor,pos;
 	
+	pos=0;
 	total=0;
 
 //Ingreso de datos
