@@ -16,10 +16,10 @@ int main(){
 	for(f=0;f<FIL;f++){
 		
 		turnosdoc[f]=0;
-		turnodia[f]=0;
 		
 		for(c=0;c<COL;c++){
 			
+			turnodia[c]=0;
 			sinturno[f][c]=0;
 			
 		}
@@ -71,8 +71,9 @@ int main(){
 			
 			if(mat[f][c]==0){
 				
-				sinturno[f][c]=c;
+				sinturno[f][c]=c+1;
 				
+				//Indicador de días sin turno
 				valid=true;
 				
 			}
@@ -81,13 +82,12 @@ int main(){
 		
 	}
 
-
 //Salida de datos
-	
+
 	printf("\n\n");
 	
 	//Grilla de turnos completa
-	printf("Doctores Lunes\tMartes\tMi%crcoles Jueves Viernes\n\n",130);
+	printf("M%cdicos Lunes\tMartes\tMi%crcoles Jueves Viernes\n\n",130,130);
 	
 	for(f=0;f<FIL;f++){
 		
@@ -104,10 +104,10 @@ int main(){
 	}
 	
 	//Listado de turnos por doctor
-	printf("\n\nCantidad total de turnos por doctor.\n\n");
+	printf("\n\nCantidad total de turnos por m%cdico.\n\n",130);
 	for(f=0;f<FIL;f++){
 		
-		printf("Doctor %d: %d\n",f+1,turnosdoc[f]);
+		printf("M%cdico %d: %d\n",130,f+1,turnosdoc[f]);
 		
 	}
 	
@@ -153,14 +153,14 @@ int main(){
 	
 	if(valid){
 		
-		printf("\n\nListado de doctores sin turno\n\n");
+		printf("\n\nListado de m%cdicos sin turno\n\n",130);
 		for(f=0;f<FIL;f++){
 			
 			for(c=0;c<COL;c++){
 				
 				if(sinturno[f][c]>0){
 					
-					printf("\nDoctor %d d%ca %d",f+1,161,sinturno[f][c]);
+					printf("\nM%cdico %d d%ca %d",130,f+1,161,sinturno[f][c]);
 					
 				}
 				
@@ -174,7 +174,6 @@ int main(){
 		
 	}
 	
-
 //Pausa y fin de programa
 	
 	printf("\n\n\n\n");
