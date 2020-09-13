@@ -64,7 +64,7 @@ float estatura(){
 	
 }
 
-char color(char col[20]){
+void color(char col[20]){
 	
 	printf("\nIngrese color favorito: ");
 	gets(col);

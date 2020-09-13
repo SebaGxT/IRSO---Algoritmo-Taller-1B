@@ -44,7 +44,7 @@ void imprimir(int mat[][C]){
 	
 }
 
-int sumfilmat(int mat[][C]){
+void sumfilmat(int mat[][C]){
 	
 	int i,j,fil;
 	
@@ -64,7 +64,7 @@ int sumfilmat(int mat[][C]){
 	
 }
 
-int sumcolmat(int mat[][C]){
+void sumcolmat(int mat[][C]){
 	
 	int i,j,col[C];
 	
@@ -93,7 +93,7 @@ int sumcolmat(int mat[][C]){
 	
 }
 
-int sumtotmat(int mat[][C]){
+void sumtotmat(int mat[][C]){
 	
 	int f,c,total=0;
 	
